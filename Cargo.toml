@@ -1,0 +1,13 @@
+# /home/ubuntu/getnvidia_portfolio/Cargo.toml
+
+[workspace]
+members = [
+    "backend",
+    "frontend",
+]
+
+resolver = "2"
+
+# The entire [patch.crates-io] section has been removed
+# because all previously conflicting dependencies are now
+# resolving correctly from crates.io on their own.

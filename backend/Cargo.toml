@@ -1,0 +1,26 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = { version = "4", features = ["macros"] }
+actix-session = { version = "0.7", features = ["cookie-session"] }
+actix-cors = "0.6"
+actix-files = "0.6"
+dotenvy = "0.15"
+env_logger = "0.11"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] } # This is the correct way to get serde functionality
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] } # Chrono needs its own "serde" feature
+validator = { version = "0.18", features = ["derive"] }
+argon2 = "0.5"
+jsonwebtoken = "8"
+# IMPORTANT: Removed "serde" from diesel features, kept "chrono" for DateTime types
+diesel = { version = "2.1.0", features = ["r2d2", "mysql", "chrono"] }
+listenfd = "0.3"
+uuid = { version = "1.8", features = ["serde", "v4"] }
+
+[dev-dependencies]
+# Add any development-only dependencies here if you have them

@@ -1,0 +1,83 @@
+/* frontend/src/main.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background, slightly off-white */
+    color: #212529; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header/Navbar Styling */
+header {
+    background-color: #343a40; /* Darker header */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Slightly larger brand text */
+    font-weight: bold;
+    color: #e9ecef !important; /* Lighter white for brand */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important; /* Pure white on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #e9ecef !important; /* Lighter white for nav links */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active { /* Added .active for current page indication */
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover/active */
+    border-radius: 0.25rem;
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem 0;
+    min-height: calc(100vh - 180px); /* Adjust based on header/footer heights */
+}
+
+.container {
+    max-width: 1200px; /* Max width for content */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Dark gray footer */
+    color: #adb5bd; /* Lighter gray for footer text */
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 3rem; /* More space above footer */
+    border-top: 1px solid #495057; /* Subtle border at the top */
+}
+
+/* Specific Component Styles (adjust as needed for your pages) */
+h1, h2, h3, h4, h5, h6 {
+    color: #007bff; /* Primary blue for headings */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Bootstrap Overrides/Adjustments if needed */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
