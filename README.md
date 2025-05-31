@@ -7,6 +7,8 @@ Frontend - .rs
 
 Database - MySQL
 
+Domain - https://www.getnvidia.my/
+
 SCREENSHOTS
 
 Homepage,
