@@ -7,6 +7,16 @@ Frontend - .rs
 
 Database - MySQL
 
+UI framewaork - Bootstrap
+
+CDN - jsDelivr
+
+Web servers, Reverse proxies - Nginx
+
+OS - Ubuntu
+
+Programming languanges - WebAssembly
+
 Domain - https://www.getnvidia.my/
 
 SCREENSHOTS
